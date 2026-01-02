@@ -9,7 +9,7 @@ const button1 = React.createElement(
     "data-id": 173,
     class: "mi-boton",
   },
-  "Me gusta"
+  "Boton 1"
 );
 
 const button2 = React.createElement(
@@ -18,7 +18,7 @@ const button2 = React.createElement(
     "data-id": 103,
     class: "mi-boton",
   },
-  "Me gusta"
+  "Boton 2"
 );
 
 const button3 = React.createElement(
@@ -27,9 +27,9 @@ const button3 = React.createElement(
     "data-id": 113,
     class: "mi-boton",
   },
-  "Me gusta"
+  "Boton 3"
 );
 
 // elemento padre que envolvera a los botones
-const div = React.createElement("div", null, [button1, button2, button3]);
+const div = React.createElement(React.Fragment, null, [button1, button2, button3]);
 root.render(div);
